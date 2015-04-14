@@ -35,6 +35,10 @@ With NVM installed you can install Node with:
 After the process complete set the default Node version:
 
     nvm alias default 0.10
+    
+## Installing Gulp globally
+
+    npm install gulp -g
 
 ## Install packages dependencies
 Just go to your repository folder and run:
