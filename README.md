@@ -36,7 +36,7 @@ After the process complete set the default Node version:
 
     nvm alias default 0.10
     
-## Installing Gulp globally
+### Installing Gulp globally
 
     npm install gulp -g
 
