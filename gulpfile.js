@@ -1,7 +1,7 @@
 /*globals require, console*/
 var gulp        = require('gulp'),
-    sass 	      = require('gulp-sass'),
-    jade   	    = require('gulp-jade'),
+    sass 	= require('gulp-sass'),
+    jade   	= require('gulp-jade'),
     order       = require('gulp-order'),
     gutil       = require('gulp-util'),
     gulpif      = require('gulp-if'),
@@ -13,11 +13,11 @@ var gulp        = require('gulp'),
     browserSync = require('browser-sync');
 
 paths = {
-	sass:	            './src/css/**/*.scss',
+	sass:	    './src/css/**/*.scss',
   html:             './src/*.html',
-	jade: 	          './src/*.jade',
-	images:           './src/img/*',
-	coffee:           './src/js/**/*.coffee',
+	jade: 	    './src/*.jade',
+	images:     './src/img/*',
+	coffee:     './src/js/**/*.coffee',
   jquery:           './node_modules/jquery/dist/jquery.min.js',
   bootstrap_js:     './node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js',
   bootstrap_css:    './node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss',
