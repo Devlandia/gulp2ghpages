@@ -1,7 +1,7 @@
 /*globals require, console*/
 var gulp        = require('gulp'),
-    sass 	= require('gulp-sass'),
-    jade   	= require('gulp-jade'),
+    sass        = require('gulp-sass'),
+    jade   	    = require('gulp-jade'),
     order       = require('gulp-order'),
     gutil       = require('gulp-util'),
     gulpif      = require('gulp-if'),
