@@ -1,7 +1,7 @@
 /*globals require, console*/
 var gulp        = require('gulp'),
     sass        = require('gulp-sass'),
-    jade   	    = require('gulp-jade'),
+    jade        = require('gulp-jade'),
     order       = require('gulp-order'),
     gutil       = require('gulp-util'),
     gulpif      = require('gulp-if'),
@@ -9,7 +9,7 @@ var gulp        = require('gulp'),
     concat      = require('gulp-concat'),
     uglify      = require('gulp-uglify'),
     ghPages     = require('gulp-gh-pages'),
-    minify_css	= require('gulp-minify-css'),
+    minify_css  = require('gulp-minify-css'),
     browserSync = require('browser-sync');
 
 paths = {
