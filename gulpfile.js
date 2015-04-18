@@ -1,7 +1,7 @@
 /*globals require, console*/
 var gulp        = require('gulp'),
-    sass 				= require('gulp-sass'),
-    jade   			= require('gulp-jade'),
+    sass 	      = require('gulp-sass'),
+    jade   	    = require('gulp-jade'),
     order       = require('gulp-order'),
     gutil       = require('gulp-util'),
     gulpif      = require('gulp-if'),
@@ -13,7 +13,7 @@ var gulp        = require('gulp'),
     browserSync = require('browser-sync');
 
 paths = {
-	sass:		          './src/css/**/*.scss',
+	sass:	            './src/css/**/*.scss',
   html:             './src/*.html',
 	jade: 	          './src/*.jade',
 	images:           './src/img/*',
@@ -40,10 +40,10 @@ gulp.task('server', function () {
 
 gulp.task('watch', function() {
   gulp.watch(paths.html,    ['html']);
-  gulp.watch(paths.jade, 		['jade']);
-  gulp.watch(paths.sass, 		['css']);
-  gulp.watch(paths.coffee, 	['scripts']);
-  gulp.watch(paths.images, 	['images']);
+  gulp.watch(paths.jade,    ['jade']);
+  gulp.watch(paths.sass,    ['css']);
+  gulp.watch(paths.coffee,  ['scripts']);
+  gulp.watch(paths.images,  ['images']);
 });
 
 gulp.task('css', function(){
