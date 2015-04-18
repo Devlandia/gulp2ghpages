@@ -47,38 +47,38 @@ gulp.task('watch', function() {
 });
 
 gulp.task('css', function(){
-	gulp.src([
-      paths.sass,
-      paths.bootstrap_css,
-      paths.fontawesome_css
-    ])
-    .pipe(gulpif(/\.scss$/, sass({ style: 'compressed' })))
-    .pipe(gulpif(/\.css$/, minify_css()))
-    .pipe(order([
-      '_bootstrap.scss',
-      'font-awesome.scss',
-      'src/css/**/*.scss'
-    ]))
-		.pipe(concat('./main.css'))
-		.pipe(gulp.dest('./build/css'));
+  gulp.src([
+    paths.sass,
+    paths.bootstrap_css,
+    paths.fontawesome_css
+  ])
+  .pipe(gulpif(/\.scss$/, sass({ style: 'compressed' })))
+  .pipe(gulpif(/\.css$/, minify_css()))
+  .pipe(order([
+    '_bootstrap.scss',
+    'font-awesome.scss',
+    'src/css/**/*.scss'
+  ]))
+  .pipe(concat('./main.css'))
+  .pipe(gulp.dest('./build/css'));
 });
 
 gulp.task('scripts', function(){
-	gulp.src([
-      paths.coffee,
-      paths.jquery,
-      paths.bootstrap_js
-    ])
-		.pipe(gulpif(/\.coffee$/, coffee({bare: true}).on('error', gutil.log)))
-		.pipe(order([
+  gulp.src([
+    paths.coffee,
+    paths.jquery,
+    paths.bootstrap_js
+  ])
+    .pipe(gulpif(/\.coffee$/, coffee({bare: true}).on('error', gutil.log)))
+    .pipe(order([
       'jquery.min.js',
       'bootstrap.min.js',
       'js/**/*.coffee'
     ]))
     .pipe(uglify())
-		.pipe(concat('./main.js'))
-		.pipe(gulp.dest('./build/js'));
-
+    .pipe(concat('./main.js'))
+    .pipe(gulp.dest('./build/js'));
+  
   // Modernizr
   gulp.src('./src/js/vendor/modernizr.min.js')
     .pipe(gulp.dest('./build/js'));
