@@ -20,21 +20,21 @@ The best way to install Node is to use [creationix/nvm](https://github.com/creat
 ### Installing NVM
 To install NVM you could use the [install script][2] using cURL:
 
-    curl https://raw.githubusercontent.com/creationix/nvm/v0.24.1/install.sh | bash
+    curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.2/install.sh | bash
 
 or Wget:
 
-    wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.24.1/install.sh | bash
+    wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.31.2/install.sh | bash
 
 ### Installing NodeJS and NPM
 
 With NVM installed you can install Node with:
 
-    nvm install 0.10
+    nvm install 4.4
 
 After the process complete set the default Node version:
 
-    nvm alias default 0.10
+    nvm alias default 4.4
     
 ### Installing Gulp globally
 
